@@ -31,7 +31,7 @@ import (
 	"math/rand"
 	"reflect"
 
-	"github.com/facebookgo/structtag"
+	"github.com/orbinc/structtag"
 )
 
 // Logger allows for simple logging as inject traverses and populates the

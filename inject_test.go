@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/facebookgo/ensure"
-	"github.com/facebookgo/inject"
+	"github.com/orbinc/ensure"
+	"github.com/orbinc/inject"
 
-	injecttesta "github.com/facebookgo/inject/injecttesta"
-	injecttestb "github.com/facebookgo/inject/injecttestb"
+	injecttesta "github.com/orbinc/inject/injecttesta"
+	injecttestb "github.com/orbinc/inject/injecttestb"
 )
 
 func init() {
@@ -238,7 +238,7 @@ func TestProvideTwoOfTheSame(t *testing.T) {
 		t.Fatal("expected error")
 	}
 
-	const msg = "provided two unnamed instances of type *github.com/facebookgo/inject_test.TypeAnswerStruct"
+	const msg = "provided two unnamed instances of type *github.com/orbinc/inject_test.TypeAnswerStruct"
 	if err.Error() != msg {
 		t.Fatalf("expected:\n%s\nactual:\n%s", msg, err.Error())
 	}
@@ -251,7 +251,7 @@ func TestProvideTwoOfTheSameWithPopulate(t *testing.T) {
 		t.Fatal("expected error")
 	}
 
-	const msg = "provided two unnamed instances of type *github.com/facebookgo/inject_test.TypeAnswerStruct"
+	const msg = "provided two unnamed instances of type *github.com/orbinc/inject_test.TypeAnswerStruct"
 	if err.Error() != msg {
 		t.Fatalf("expected:\n%s\nactual:\n%s", msg, err.Error())
 	}
